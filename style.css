@@ -1,0 +1,218 @@
+/*Reset de CSS*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*Importar una o más fuentes para todo el CSS - Luego se pueden ir usando donde uno quiera llamándolas con "font-family: nombredelafuente;"*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*PARA BUSCAR COLORIMETRIA: https://colorhunt.co/palette/3d3b40525cebbfcfe7f8edff
+
+Para colorimetria Bootstrap: https://getbootstrap.com/docs/5.0/customize/color/
+*/
+
+
+/* INICIO MODIFICACIONES BOOTSTRAP*/
+
+/* Definir el color de fondo del navbar para bootstrap */
+
+.nav-link {
+    color: white;
+}
+
+.navbar-toggler-icon {
+    color: white;
+}
+
+.nav-link.active {
+    color:#ff7f50 !important;
+}
+
+/* FIN MODIFICACIONES CSS BOOTSTRAP */
+
+/*Define diseño para el encabezado H1*/
+h1 {
+    padding: 10px;
+    margin: 15px;
+    text-align: center;
+    font-family: "Roboto";
+    color:#3D3B40;
+}
+
+/*Define diseño para todos los encabezados H2*/
+h2 {
+    padding: 10px;
+    text-align: center;
+    font-family: "Roboto";
+    color:#3D3B40;
+}
+
+p {
+    font-family: "Roboto";
+    text-align: center;
+}
+
+/*Define el estilo de los botones con clase "primary"*/
+.primary {
+    background-color: #525CEB;
+    color: white;
+    padding: 12px;
+    border: none;
+    font-weight: 600;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+/*Limitar el tamaño del logo y agregar margenes para encuadrarlo mejor*/
+.logo {
+    height: 70px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/*Aplicar diseño de la barra de navegación usada en todas las páginas (Mobile-First)*/
+.navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: #525CEB;
+    padding: 7px;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto";
+}
+
+/*Define estilo del menu dentro del navbar (Mobile-First)*/
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 5px;
+}
+
+/*Define el estilo de los links dentro del nav-menu (Mobile-First)*/
+.nav-menu a {
+    display: inline-block;
+    text-decoration: none; /*Elimina el subrayado de los links del menu*/
+    color:#F8EDFF;
+    text-transform: uppercase;
+    margin: 2px;
+    padding: 2px;
+}
+
+.video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 19 / 9; /*Auto calcula la altura*/
+    padding: 10px;
+}
+
+.botones-home {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*El estilo normal es Mobile, aquí saliendo de 550px, pasamos a Desktop, para lo que aplicamos un estilo*/
+@media only screen and (min-width: 550px) {
+    .navbar {
+        flex-direction: row;
+        
+    }
+
+    .nav-menu {
+        flex-direction: row;
+        justify-content: center;
+        list-style: none;
+        padding: 10px;
+    }
+
+    .nav-menu a {
+        text-decoration: none; /*Elimina el subrayado de los links del menu*/
+        color:#F8EDFF;
+        text-transform: uppercase;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .main-grid {
+        display: grid;
+        grid-template-areas: 
+            "grid-h2 grid-h2 video"
+            "grid-text grid-text video"
+            "botones-home botones-home video"
+        ;
+    }
+    .grid-h2{
+        grid-area: grid-h2;
+    }
+    .video {
+        grid-area: video;
+    }
+    .grid-text {
+        grid-area: grid-text;
+    }
+    .botones-home {
+        grid-area: botones-home;
+    }
+
+
+}
+
+/*Aplicar diseño a formulario de contacto en página CONTACTO*/
+.formulario-contacto {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*Alineacion Vertical*/
+    justify-content: center; /*Alineacion Horizontal*/
+    font-family: "Roboto";
+    background-color: #f1f1f1;
+    max-width: 400px;
+    border-radius: 8px;
+    padding: 10px;
+    gap: 5px;
+}
+
+/*Definir características de la imagen clase "community" del homepage*/
+.community {
+    height: 350px;
+    text-align: center;
+}
+
+/*Define estilo flex para los containers con clase "two-column-container"*/
+.two-column-container {
+    display: flex;
+}
+
+/*Define el estilo para los div con clase "two-column"*/
+.two-column {
+    width: 50%;
+    text-align: center;
+    margin: 15px;
+    padding: 30px;
+}
+
+/*Define diseño del footer para todas las páginas*/
+footer {
+    background-color: #BFCFE7;
+    font-family: "Roboto";
+    font-size: 12px;
+    color:#3D3B40;
+    padding: 40px;
+}
+
+/*Define el estilo para la section con clase "listado-especialidades*/
+.listado-especialidades {
+    font-family: "Roboto";
+    text-align: center;
+}
+
+/*Define el estilo para los DIV con clase "texto-centrado"*/
+.texto-centrado {
+    font-family: "Roboto";
+    text-align: center;
+    margin: 40px;
+}

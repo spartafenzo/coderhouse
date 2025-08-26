@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Inserta Boostrap -->
+    <!-- Esto al igual que el CSS tiene que pegarse en todas las páginas para que funcione -->
+    <link defer href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- Mi CSS Sobreescribe Bootstrap por cascada -->
+    <link rel="stylesheet" href="style.css">
+    <title>Babilonia</title>
+</head>
+
+<body>
+    <header>
+        <!-- <nav class="navbar">
+            <img class="logo" src="../Babilonia/media/logo.png" alt="¿qué muestra la imagen?">
+            <ul class="nav-menu">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./pages/quienes-somos.html">Quienes Somos</a></li>
+                <li><a href="./pages/que-hacemos.html">Qué Hacemos</a></li>
+                <li><a href="./pages/que-hacemos.html">Especialidades</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav> -->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-indigo500">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Quienes somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Qué hacemos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Especialidades
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Quiropraxia</a></li>
+                                <li><a class="dropdown-item" href="#">Kinesiología</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contrata el especialista que necesitas</h1>
+        <section class="main-grid">
+            <iframe class="video" src="https://www.youtube.com/embed/FTBQNJMIaUE?si=9gfX0Qw0tudJvoxT&amp;controls=0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="grid-h2">
+                <h2>Te explicamos cómo funciona</h2>
+            </div>
+
+            <div class="grid-text">
+                <p>
+                    En Babilonia te conectamos con Profesionales y con especialistas de distintas áreas de una forma
+                    fácil y segura.
+                </p>
+            </div>
+
+            <div class="botones-home">
+                <button class="primary" onclick="">Publicar</button>
+                <button class="primary" onclick="">Buscar</button>
+            </div>
+            <br>
+            <div class="grid-h2">
+                <h2>El especialista que necesitas te está esperando</h2>
+            </div>
+            <img class="grid-image" src="./media/community.png" alt="columnidad-babilonia">
+        </section>
+    </main>
+
+    <footer>
+        <p>Babilonia 2025, Todos los derechos reservados</p>
+
+    </footer>
+
+    <!-- Carga Javascript para que funcionen las cosas de Bootstrap -->
+    <!-- Esto tiene que pegarse en todas las páginas para que funcione -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
