@@ -15,20 +15,11 @@
 
 <body>
     <header>
-        <!-- <nav class="navbar">
-            <img class="logo" src="../Babilonia/media/logo.png" alt="¿qué muestra la imagen?">
-            <ul class="nav-menu">
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/quienes-somos.html">Quienes Somos</a></li>
-                <li><a href="./pages/que-hacemos.html">Qué Hacemos</a></li>
-                <li><a href="./pages/que-hacemos.html">Especialidades</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav> -->
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-indigo500">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-indigo500">
+            <div class="container-fluid align-items-center justify-content-between">
+                <a class="navbar-brand px-0" href="#">
+                    <img src="./media/logo.png" alt="logo-babilonia" class="logo">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -40,30 +31,18 @@
                             <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Quienes somos</a>
+                            <a class="nav-link" href="./pages/quienes-somos.html">Quienes somos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Qué hacemos</a>
+                            <a class="nav-link" href="./pages/que-hacemos.html">Qué hacemos</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Especialidades
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Quiropraxia</a></li>
-                                <li><a class="dropdown-item" href="#">Kinesiología</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/especialidades.html">Especialidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
                         </li>
                     </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
                 </div>
             </div>
         </nav>

@@ -28,6 +28,7 @@ Para colorimetria Bootstrap: https://getbootstrap.com/docs/5.0/customize/color/
 
 .nav-link.active {
     color:#ff7f50 !important;
+    font-size: 130%;
 }
 
 /* FIN MODIFICACIONES CSS BOOTSTRAP */
@@ -67,9 +68,11 @@ p {
 
 /*Limitar el tamaño del logo y agregar margenes para encuadrarlo mejor*/
 .logo {
-    height: 70px;
-    margin-left: 15px;
-    margin-right: 15px;
+    width: auto;
+    height: 45px;
+    display: block;
+    padding: 0px;
+    margin: 0px;
 }
 
 /*Aplicar diseño de la barra de navegación usada en todas las páginas (Mobile-First)*/
