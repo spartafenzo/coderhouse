@@ -1,5 +1,5 @@
 /*Reset de CSS*/
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -14,31 +14,28 @@ Para colorimetria Bootstrap: https://getbootstrap.com/docs/5.0/customize/color/
 */
 
 
-/* INICIO MODIFICACIONES BOOTSTRAP*/
-
-/* Definir el color de fondo del navbar para bootstrap */
+/*-------------INICIO MODIFICACIONES BOOTSTRAP---------------*/
 
 .nav-link {
     color: white;
-}
-
-.navbar-toggler-icon {
-    color: white;
+    /* Definir el color de fondo del navbar para bootstrap */
 }
 
 .nav-link.active {
-    color:#ff7f50 !important;
+    color: #ff7f50 !important;
+    /* El link del menú seleccionado se marca de este color*/
 }
 
-/* FIN MODIFICACIONES CSS BOOTSTRAP */
+/*------------FIN MODIFICACIONES CSS BOOTSTRAP--------------*/
 
-/*Define diseño para el encabezado H1*/
+
+/*Define diseño para todos los encabezados H1*/
 h1 {
     padding: 10px;
     margin: 15px;
     text-align: center;
     font-family: "Roboto";
-    color:#3D3B40;
+    color: #3D3B40;
 }
 
 /*Define diseño para todos los encabezados H2*/
@@ -46,9 +43,10 @@ h2 {
     padding: 10px;
     text-align: center;
     font-family: "Roboto";
-    color:#3D3B40;
+    color: #3D3B40;
 }
 
+/* Define la fuente de los párrafos y los centra */
 p {
     font-family: "Roboto";
     text-align: center;
@@ -74,7 +72,7 @@ p {
     margin: 0px;
 }
 
-/*Aplicar diseño de la barra de navegación usada en todas las páginas (Mobile-First)*/
+/*Aplicar diseño de la barra de navegación usada en todas las páginas (esto es Mobile-First)*/
 .navbar {
     display: flex;
     flex-direction: column;
@@ -98,30 +96,41 @@ p {
 /*Define el estilo de los links dentro del nav-menu (Mobile-First)*/
 .nav-menu a {
     display: inline-block;
-    text-decoration: none; /*Elimina el subrayado de los links del menu*/
-    color:#F8EDFF;
+    text-decoration: none;
+    /*Elimina el subrayado de los links del menu*/
+    color: #F8EDFF;
     text-transform: uppercase;
     margin: 2px;
     padding: 2px;
 }
 
-.video {
-    display: block;
+.video iframe {
     width: 100%;
-    aspect-ratio: 19 / 9; /*Auto calcula la altura*/
+    aspect-ratio: 16/9;
+    border: 0;
     padding: 10px;
 }
 
 .botones-home {
     display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
     justify-content: space-evenly;
 }
 
-/*El estilo normal es Mobile, aquí saliendo de 550px, pasamos a Desktop, para lo que aplicamos un estilo*/
-@media only screen and (min-width: 550px) {
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--gap) calc(var(--gap) * 1.25);
+    align-items: start;
+}
+
+
+/*El estilo normal es Mobile, aquí saliendo de 550px, pasamos a Desktop, para lo que aplicamos otro estilo*/
+@media only screen and (min-width: 500px) {
     .navbar {
         flex-direction: row;
-        
+
     }
 
     .nav-menu {
@@ -132,49 +141,89 @@ p {
     }
 
     .nav-menu a {
-        text-decoration: none; /*Elimina el subrayado de los links del menu*/
-        color:#F8EDFF;
+        text-decoration: none;
+        /*Elimina el subrayado de los links del menu*/
+        color: #F8EDFF;
         text-transform: uppercase;
         margin: 5px;
         padding: 5px;
     }
 
-    .main-grid {
-        display: grid;
-        grid-template-areas: 
-            "grid-h2 grid-h2 video"
-            "grid-text grid-text video"
-            "botones-home botones-home video"
-        ;
+    /* definimos el diseño de la grilla con grid-template-areas */
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "intro video"
+            "title2 title2"
+            "botones-home botones-home"
+            "title3 list";
     }
-    .grid-h2{
-        grid-area: grid-h2;
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        text-align: center;
+        grid-area: intro;
     }
+
     .video {
         grid-area: video;
     }
-    .grid-text {
-        grid-area: grid-text;
+
+    .title-2 {
+        grid-area: title2;
     }
+
     .botones-home {
         grid-area: botones-home;
     }
 
+    .title-3 {
+        grid-area: title3;
+    }
 
+    .list {
+        grid-area: list;
+    }
 }
+
+
+/* Cosmetica adicional */
+h2 {
+    margin: 0;
+    font-size: clamp(1.25rem, 2.2vw, 1.75rem);
+}
+
+p {
+    margin: 0;
+    color: #333;
+}
+
+.cardish {
+    background: #fafafa;
+    border: 1px solid #eee;
+    border-radius: var(--radius);
+    padding: 1rem;
+}
+
 
 /*Aplicar diseño a formulario de contacto en página CONTACTO*/
 .formulario-contacto {
     margin: auto;
     display: flex;
     flex-direction: column;
-    align-items: center; /*Alineacion Vertical*/
-    justify-content: center; /*Alineacion Horizontal*/
+    align-items: center;
+    /*Alineacion Vertical*/
+    justify-content: center;
+    /*Alineacion Horizontal*/
     font-family: "Roboto";
     background-color: #f1f1f1;
     max-width: 400px;
     border-radius: 8px;
     padding: 10px;
+    margin: 20px;
     gap: 5px;
 }
 
@@ -202,7 +251,7 @@ footer {
     background-color: #BFCFE7;
     font-family: "Roboto";
     font-size: 12px;
-    color:#3D3B40;
+    color: #3D3B40;
     padding: 40px;
 }
 
