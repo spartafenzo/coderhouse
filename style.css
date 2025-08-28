@@ -160,10 +160,7 @@ p {
     }
 
     .intro {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        place-self: center;
         text-align: center;
         grid-area: intro;
     }
@@ -181,6 +178,8 @@ p {
     }
 
     .title-3 {
+        place-self: center;
+        text-align: center;
         grid-area: title3;
     }
 
