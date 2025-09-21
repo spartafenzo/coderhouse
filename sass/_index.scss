@@ -1,0 +1,53 @@
+@use "./variables"as*;
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--gap) calc(var(--gap) * 1.25);
+    align-items: start;
+
+    .video {
+        iframe {
+            width: 100%;
+            aspect-ratio: 16/9;
+            border: 0;
+            padding: 10px;
+        }
+    }
+
+    .botones-home {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        justify-content: space-evenly;
+
+        button.primary,
+        .btn.primary {
+            // covers both <button> and <a class="btn primary">
+            display: inline-flex; // prevents full-row stretch
+            align-items: center;
+            justify-content: center;
+            width: auto; // ensure it doesn't fill the row
+            background-color: $primary-color;
+            color: #fff;
+            padding: 12px 24px;
+            border: 0;
+            font-weight: 600;
+            border-radius: 20px;
+            margin: 10px;
+            cursor: pointer;
+            transition: background-color .25s ease, transform .25s ease, box-shadow .25s ease;
+
+            &:hover {
+                background-color: darken($primary-color, 8%);
+                transform: translateY(-3px);
+                box-shadow: 0 6px 12px rgba(0, 0, 0, .25);
+            }
+
+            &:active {
+                transform: translateY(-1px);
+                box-shadow: 0 3px 6px rgba(0, 0, 0, .25);
+            }
+        }
+    }
+}

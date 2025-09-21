@@ -18,13 +18,12 @@ Para colorimetria Bootstrap: https://getbootstrap.com/docs/5.0/customize/color/
 
 .nav-link {
     color: white;
-    /* Definir el color de fondo del navbar para bootstrap */
 }
 
 .nav-link.active {
     color: #ff7f50 !important;
-    /* El link del menú seleccionado se marca de este color*/
-}
+} 
+
 
 /*------------FIN MODIFICACIONES CSS BOOTSTRAP--------------*/
 
@@ -97,12 +96,12 @@ p {
 .nav-menu a {
     display: inline-block;
     text-decoration: none;
-    /*Elimina el subrayado de los links del menu*/
     color: #F8EDFF;
     text-transform: uppercase;
     margin: 2px;
     padding: 2px;
 }
+
 
 .video iframe {
     width: 100%;
@@ -133,16 +132,15 @@ p {
 
     }
 
-    .nav-menu {
+    /* .nav-menu {
         flex-direction: row;
         justify-content: center;
         list-style: none;
         padding: 10px;
-    }
+    } */
 
     .nav-menu a {
         text-decoration: none;
-        /*Elimina el subrayado de los links del menu*/
         color: #F8EDFF;
         text-transform: uppercase;
         margin: 5px;
@@ -247,7 +245,7 @@ p {
 
 /*Define diseño del footer para todas las páginas*/
 footer {
-    background-color: #BFCFE7;
+    background-color: #ededed;
     font-family: "Roboto";
     font-size: 12px;
     color: #3D3B40;

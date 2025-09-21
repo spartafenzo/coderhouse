@@ -1,0 +1,14 @@
+// Cargamos los Parshalls porque la hoja estilos.scss tiene que estar siempre limpia.
+@use "./variables";
+@use "./generales";
+@use "./index";
+@use "./especialidades";
+@use "./que-hacemos";
+@use "./quienes-somos";
+@use "./contacto";
+
+// Siempre el Media Query va al final por cascada para que no lo pise otro código
+@use "./mediaQ";
+
+
+

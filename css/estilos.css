@@ -1,0 +1,185 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/*Definición de la paleta de colores en SCSS*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/*Importar una o más fuentes para todo el CSS - Luego se pueden ir usando donde uno quiera llamándolas con "font-family: nombredelafuente;"*/
+/*COLORIMETRIA: https://colorhunt.co/palette/3d3b40525cebbfcfe7f8edff  */
+/*COLORIMETRIA Bootstrap: https://getbootstrap.com/docs/5.0/customize/color/  */
+/*Define diseño para todos los encabezados H1*/
+h1 {
+  padding: 10px;
+  margin: 15px;
+  text-align: center;
+  font-family: "Roboto";
+  color: #1A1A1A;
+}
+
+/*Define diseño para todos los encabezados H2*/
+h2 {
+  padding: 10px;
+  text-align: center;
+  font-family: "Roboto";
+  color: #1A1A1A;
+}
+
+/* Define la fuente de los párrafos y los centra */
+p {
+  font-family: "Roboto";
+  text-align: center;
+}
+
+/*Anidación del Navbar*/
+.navbar {
+  display: flex;
+  flex-direction: column;
+  background-color: #525CEB;
+  padding: 7px;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto";
+}
+.navbar .navbar-brand .logo {
+  width: auto;
+  height: 45px;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+.navbar .collapse .navbar-nav .nav-item .nav-link {
+  color: white;
+}
+.navbar .collapse .navbar-nav .nav-item.active {
+  color: #ff7f50 !important;
+}
+
+/*Define el estilo para los DIV con clase "texto-centrado"*/
+.texto-centrado {
+  font-family: "Roboto";
+  text-align: center;
+  margin: 40px;
+}
+
+/*Define diseño del footer para todas las páginas*/
+footer {
+  background-color: #ededed;
+  font-family: "Roboto";
+  font-size: 12px;
+  color: #3D3B40;
+  padding: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--gap) calc(var(--gap) * 1.25);
+  align-items: start;
+}
+.grid .video iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border: 0;
+  padding: 10px;
+}
+.grid .botones-home {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: space-evenly;
+}
+.grid .botones-home button.primary,
+.grid .botones-home .btn.primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  background-color: #525CEB;
+  color: #fff;
+  padding: 12px 24px;
+  border: 0;
+  font-weight: 600;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+.grid .botones-home button.primary:hover,
+.grid .botones-home .btn.primary:hover {
+  background-color: rgb(45.4279792746, 57.5419689119, 230.7720207254);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+.grid .botones-home button.primary:active,
+.grid .botones-home .btn.primary:active {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+/*Define el estilo para la section con clase "listado-especialidades*/
+.listado-especialidades {
+  font-family: "Roboto";
+  text-align: center;
+}
+
+.formulario-contacto {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*Alineacion Vertical*/
+  justify-content: center;
+  /*Alineacion Horizontal*/
+  font-family: "Roboto";
+  background-color: #f1f1f1;
+  max-width: 400px;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 20px;
+  gap: 5px;
+}
+
+/*El estilo normal es Mobile, aquí saliendo de 500px, pasamos a Desktop, para lo que aplicamos otro estilo*/
+@media only screen and (min-width: 500px) {
+  .navbar {
+    flex-direction: row;
+  }
+  .navbar .navbar .navbar-nav .nav-link {
+    text-decoration: none;
+    color: #F8EDFF;
+    text-transform: uppercase;
+    margin: 5px;
+    padding: 5px;
+  }
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "intro video" "title2 title2" "botones-home botones-home" "title3 list";
+  }
+  .grid .intro {
+    place-self: center;
+    text-align: center;
+    grid-area: intro;
+  }
+  .grid .video {
+    grid-area: video;
+  }
+  .grid .title-2 {
+    grid-area: title2;
+  }
+  .grid .botones-home {
+    grid-area: botones-home;
+  }
+  .grid .title-3 {
+    place-self: center;
+    text-align: center;
+    grid-area: title3;
+  }
+  .grid .list {
+    grid-area: list;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

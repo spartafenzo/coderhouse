@@ -1,0 +1,61 @@
+/*El estilo normal es Mobile, aquí saliendo de 500px, pasamos a Desktop, para lo que aplicamos otro estilo*/
+@media only screen and (min-width: 500px) {
+    .navbar {
+        flex-direction: row;
+
+        .navbar .navbar-nav .nav-link {
+            text-decoration: none;
+            color: #F8EDFF;
+            text-transform: uppercase;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        // .nav-menu a {
+        //     text-decoration: none;
+        //     color: #F8EDFF;
+        //     text-transform: uppercase;
+        //     margin: 5px;
+        //     padding: 5px;
+        // }
+    }
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "intro video"
+            "title2 title2"
+            "botones-home botones-home"
+            "title3 list";
+
+        .intro {
+            place-self: center;
+            text-align: center;
+            grid-area: intro;
+        }
+
+        .video {
+            grid-area: video;
+        }
+
+        .title-2 {
+            grid-area: title2;
+        }
+
+        .botones-home {
+            grid-area: botones-home;
+        }
+
+        .title-3 {
+            place-self: center;
+            text-align: center;
+            grid-area: title3;
+        }
+
+        .list {
+            grid-area: list;
+        }
+
+
+    }
+}
