@@ -6,6 +6,8 @@
 @use "./que-hacemos";
 @use "./quienes-somos";
 @use "./contacto";
+@use "sass:color";
+
 
 // Siempre el Media Query va al final por cascada para que no lo pise otro código
 @use "./mediaQ";
