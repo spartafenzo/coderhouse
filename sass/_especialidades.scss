@@ -12,8 +12,9 @@ h1 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1.5rem;
+    width: 80%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 25px auto;
 
     .category-card {
         background: white;

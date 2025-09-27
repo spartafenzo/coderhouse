@@ -1,1 +1,55 @@
 @use "./variables" as*;
+
+.who-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    margin-bottom: 40px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 300px;
+    /* cards flexibles */
+    max-width: 350px;
+
+    img {
+        width: 100%;
+        height: 250px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    h2 {
+        margin: 0;
+        font-size: 1.4rem;
+        color: $fonts-color;
+        text-align: left;
+    }
+
+    p {
+        margin: 0;
+        line-height: 1.5;
+        color: $fonts-color;
+        font-size: 0.95rem;
+        text-align: justify;
+    }
+
+    .who {
+        display: flex;
+        flex-direction: column;
+        margin: 8px;
+    }
+
+    .rrss {
+    display: flex;
+    img {
+        width: 30px;
+        margin: 3px;
+        height: auto;
+    }
+}
+}
+
+
+

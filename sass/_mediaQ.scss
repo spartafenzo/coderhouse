@@ -10,17 +10,10 @@
             margin: 5px;
             padding: 5px;
         }
-
-        // .nav-menu a {
-        //     text-decoration: none;
-        //     color: #F8EDFF;
-        //     text-transform: uppercase;
-        //     margin: 5px;
-        //     padding: 5px;
-        // }
     }
 
     .grid {
+        padding: 2rem;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
             "intro video"
@@ -58,4 +51,36 @@
 
 
     }
+
+    .who-card {
+        flex-direction: row; // transforma el layout vertical de mobile-first, a horizontal en fila.
+        align-items: flex-start;
+        max-width: 900px; //limito el tamaño máximo de la "who-card" para que no se estire demasiado.
+
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 1rem; // crea un espacio entre el contenido y la imagen
+        }
+
+        img {
+            width: 40%; // La imagen con flex "row" toma el 40% inicial de la row
+            height: auto; // la imagen se adapta al tamaño.
+        }
+
+        .who {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .rrss {
+            img {
+                height: auto;
+                width: 30px;
+            }
+        }
+    }
+
 }

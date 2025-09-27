@@ -2,7 +2,7 @@
 
 
 .formulario-contacto {
-    margin: auto;
+    margin: 20px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,9 +11,10 @@
     /*Alineacion Horizontal*/
     font-family: "Roboto";
     background-color: #f1f1f1;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     max-width: 400px;
     border-radius: 8px;
     padding: 10px;
-    margin: 20px;
     gap: 5px;
+    
 }
