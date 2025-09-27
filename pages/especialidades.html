@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Especialidades</title>
     <!-- Inserta Boostrap -->
     <!-- Esto al igual que el CSS tiene que pegarse en todas las páginas para que funcione -->
-    <link defer href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link defer href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <!-- Mi CSS Sobreescribe Bootstrap por cascada -->
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-indigo500">
@@ -47,30 +50,51 @@
 
     <main>
         <h1>Especialidades</h1>
-        <section class="listado-especialidades">
-            <ul>
-                <li>Quiropraxia</li>
-                <li>Psicología</li>
-                <li>Entrenamiento Personalizado</li>
-                <li>Kinesiología</li>
-                <li>Maquilladoras</li>
-                <li>Peinados</li>
-                <li>y muchos más...</li>
-            </ul>
-            <br>
-            
-        </section>
+        <div class="categories-grid">
+            <div class="category-card">
+                <h2>Quiropraxia</h2>
+                <p>Médicos, psicólogos, nutricionistas y más.</p>
+            </div>
+
+            <div class="category-card">
+                <h2>Psicología</h2>
+                <p>Profesores, tutores y formación online.</p>
+            </div>
+
+            <div class="category-card">
+                <h2>Kinesiología</h2>
+                <p>Arquitectos, maestros de obra, electricistas.</p>
+            </div>
+
+            <div class="category-card">
+                <h2>Maquillaje y Peinado</h2>
+                <p>Desarrolladores, soporte TI, marketing digital.</p>
+            </div>
+
+            <div class="category-card">
+                <h2>Derecho</h2>
+                <p>Peluqueros, esteticistas, cosmetólogos.</p>
+            </div>
+
+            <div class="category-card">
+                <h2>Deporte</h2>
+                <p>Entrenadores personales, fisioterapeutas.</p>
+            </div>
+        </div>
 
     </main>
 
     <footer>
-        
+
         <p>Babilonia 2025, Todos los derechos reservados</p>
-        
+
     </footer>
 
     <!-- Carga Javascript para que funcionen las cosas de Bootstrap -->
     <!-- Esto tiene que pegarse en todas las páginas para que funcione -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>

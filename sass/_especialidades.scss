@@ -1,7 +1,53 @@
-@use "./variables" as*;
+@use "./variables"as*;
 
 /*Define el estilo para la section con clase "listado-especialidades*/
-.listado-especialidades {
-    font-family: "Roboto";
+h1 {
     text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: $fonts-color;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .category-card {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        cursor: pointer;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        img {
+            width: 64px;
+            height: 64px;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            margin: 0;
+            color: $fonts-color;
+        }
+
+        p {
+            font-size: 0.9rem;
+            color: $fonts-color;
+            text-align: center;
+            margin-top: 0.5rem;
+        }
+    }
 }

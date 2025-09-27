@@ -53,7 +53,7 @@ p {
 .navbar .collapse .navbar-nav .nav-item .nav-link {
   color: white;
 }
-.navbar .collapse .navbar-nav .nav-item.active {
+.navbar .collapse .navbar-nav .nav-link.active {
   color: #ff7f50 !important;
 }
 
@@ -71,6 +71,10 @@ footer {
   font-size: 12px;
   color: #3D3B40;
   padding: 40px;
+}
+
+body {
+  background-color: #f9f9f9;
 }
 
 .grid {
@@ -109,7 +113,7 @@ footer {
 }
 .grid .botones-home button.primary:hover,
 .grid .botones-home .btn.primary:hover {
-  background-color: rgb(59.2679792746, 70.5819689119, 232.3720207254);
+  background-color: rgb(47.9019689119, 59.8729533679, 231.0580310881);
   transform: translateY(-3px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
 }
@@ -120,9 +124,50 @@ footer {
 }
 
 /*Define el estilo para la section con clase "listado-especialidades*/
-.listado-especialidades {
-  font-family: "Roboto";
+h1 {
   text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #1A1A1A;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.categories-grid .category-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+.categories-grid .category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+.categories-grid .category-card img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1rem;
+}
+.categories-grid .category-card h2 {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #1A1A1A;
+}
+.categories-grid .category-card p {
+  font-size: 0.9rem;
+  color: #1A1A1A;
+  text-align: center;
+  margin-top: 0.5rem;
 }
 
 section {
@@ -141,30 +186,29 @@ section {
   gap: 1rem;
   padding: 1rem;
   background: white;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   flex: 1 1 300px;
   /* cards flexibles */
   max-width: 350px;
-  /* no crecen demasiado */
 }
 .card img {
   width: 100%;
-  height: 100px;
-  /* más pequeño en móviles */
-  border-radius: 6px;
+  height: 250px;
+  border-radius: 10px;
   object-fit: cover;
 }
 .card h2 {
   margin: 0;
   font-size: 1.3rem;
-  color: #333;
+  color: #1A1A1A;
 }
 .card p {
   margin: 0;
   line-height: 1.5;
-  color: #555;
+  color: #1A1A1A;
   font-size: 0.95rem;
+  text-align: justify;
 }
 
 .formulario-contacto {
